@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from './_index.css';
+
 const App = ({ Component, pageProps }) => {
     return (
         <>

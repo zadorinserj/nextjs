@@ -1,0 +1,45 @@
+.field {
+    position: relative;
+    display: block;
+}
+
+.label {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    color: #9299a2;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    white-space: nowrap;
+    transition: top .2s ease, font-size .2s ease;
+    pointer-events: none;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    padding: 30px 16px 12px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #eef2f7;
+    transition: background-color .2s ease, border-color .2s ease;
+}
+
+.focused {
+    .input {
+        background-color: #fff;
+        border-color: #dddfe0;
+    }
+}
+
+.has_value, .focused {
+    .label {
+        top: 12px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+}

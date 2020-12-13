@@ -1,0 +1,15 @@
+.dashboard {
+    padding-top: 20px;
+}
+
+.plates {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.plate {
+    margin-bottom: 30px;
+    width: 420px;
+    background-color: #fff;
+}
