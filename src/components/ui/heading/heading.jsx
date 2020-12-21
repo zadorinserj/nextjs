@@ -1,16 +1,16 @@
 import React from 'react';
 
 import classNames from 'classnames/bind';
-import styles from './container.module.scss';
+import styles from './heading.module.scss';
 const cx = classNames.bind(styles);
 
-export const Container = ({
+export const Heading = ({
     className,
     children,
 }) => {
     return (
-        <div className={ cx(styles.container, className) }>
+        <h2 className={ cx(styles.heading, className) }>
             { children }
-        </div>
-    );
+        </h2>
+    )
 };

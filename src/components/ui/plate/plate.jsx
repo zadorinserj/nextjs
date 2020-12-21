@@ -6,10 +6,11 @@ const cx = classNames.bind(styles);
 
 export const Plate = ({
     className,
+    isActive,
     children,
 }) => {
     return (
-        <div className={ cx(styles.plate, className) }>
+        <div className={ cx(styles.plate, className, { [styles.active]: isActive }) }>
             { children }
         </div>
     );

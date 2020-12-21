@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     string,
     func,
@@ -26,7 +26,7 @@ export const Input = ({
         const { target } = event;
 
         setValue(target.value);
-        onChange(name, value);
+        onChange(name, target.value);
     };
 
     const handleFocus = () => {
@@ -40,6 +40,12 @@ export const Input = ({
 
         onBlur();
     };
+
+    useEffect(() => {
+        if (value !== stateValue) {
+            setValue(value);
+        }
+    }, [value]);
 
     return (
         <label
