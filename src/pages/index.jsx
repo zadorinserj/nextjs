@@ -1,18 +1,7 @@
 import React from 'react';
-import Head from 'next/head';
 
-import { Plate } from '../components/ui/plate';
+import { Home } from '../components/pages/home';
 
-const IndexPage = () => {
-    return (
-        <div>
-            <Head>
-                <title>Create Next App</title>
-                <link rel="icon" href="/favicon.ico" />
-                <Plate />
-            </Head>
-        </div>
-    )
-}
+const IndexPage = () => (<Home />);
 
-export default IndexPage
+export default IndexPage;

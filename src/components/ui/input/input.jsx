@@ -54,7 +54,7 @@ export const Input = ({
                 styles.field,
                 {
                     focused,
-                    has_value: value?.length > 0 || stateValue.length > 0
+                    has_value: value?.length > 0 || stateValue?.length > 0
                 }
             ) }
         >
